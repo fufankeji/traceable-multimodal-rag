@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./src:/app/src
+    environment:
+      - DATABASE_URL=sqlite:///./test.db
+      - MILVUS_HOST=milvus
+      - MILVUS_PORT=19530
+    depends_on:
+      - db
+      - milvus
+
+  db:
+    image: postgres:latest
+    restart: always
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: knowledge_base
+    ports:
+      - "5432:5432"
+
+  milvus:
+    image: milvusdb/milvus:latest
+    restart: always
+    ports:
+      - "19530:19530"
+    environment:
+      - MILVUS_DB=milvus_db
+      - MILVUS_PORT=19530
+      - MILVUS_MODE=standalone
+      - MILVUS_LOG_LEVEL=debug

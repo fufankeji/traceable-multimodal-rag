@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+sqlalchemy
+pydantic
+milvus
+python-multipart
+alembic
+pytest
+pytest-asyncio
+asyncpg
+databases

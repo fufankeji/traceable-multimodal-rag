@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>测试居中布局</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white">
+    <!-- 这是我们期望的布局 -->
+    <div class="h-screen flex items-center justify-center overflow-hidden p-6">
+        <div class="w-full max-w-3xl space-y-8">
+            <!-- 标题 -->
+            <div class="flex items-center justify-center gap-3">
+                <svg class="h-6 w-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+                </svg>
+                <h2 class="text-xl font-semibold">智能问答</h2>
+            </div>
+
+            <!-- 上传区域 -->
+            <div class="bg-gray-800/50 border border-gray-700 rounded-xl p-6">
+                <div class="flex flex-col items-center justify-center gap-4 p-6 rounded-lg min-h-[200px] cursor-pointer hover:bg-gray-800/30">
+                    <svg class="h-12 w-12 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"></path>
+                    </svg>
+                    <div class="text-center">
+                        <p class="text-base font-medium mb-2">点击上传图像或 CAD 文件</p>
+                        <p class="text-sm text-gray-400">支持 PNG, JPG, PDF, DWG, DXF 格式</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 输入框 -->
+            <div class="relative">
+                <input
+                    type="text"
+                    placeholder="请输入您的问题，例如：这张图中有几个卧室？总面积是多少？"
+                    class="w-full h-14 pl-12 pr-32 text-sm bg-gray-800/80 border border-gray-700 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-500"
+                />
+                <svg class="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                </svg>
+                <button class="absolute right-2 top-1/2 -translate-y-1/2 h-10 px-6 text-sm bg-gradient-to-r from-blue-500 to-purple-500 rounded-xl">
+                    提问
+                </button>
+            </div>
+
+            <!-- 示例问题 -->
+            <div class="flex flex-wrap gap-2 justify-center">
+                <span class="text-xs text-gray-400">试试这些问题：</span>
+                <button class="h-7 px-3 text-xs border border-gray-700 rounded hover:border-blue-500 hover:bg-blue-500/5">这张图中有几个卧室？</button>
+                <button class="h-7 px-3 text-xs border border-gray-700 rounded hover:border-blue-500 hover:bg-blue-500/5">总面积是多少？</button>
+            </div>
+
+            <!-- 说明 -->
+            <div class="text-center py-8">
+                <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gray-800/30 mb-4">
+                    <svg class="h-8 w-8 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-base font-medium mb-2">支持文本+图像/CAD 混合检索</h3>
+                <p class="text-sm text-gray-400 max-w-md mx-auto">可直接输入图像或 CAD 文件，系统将使用多模态大模型进行语义识别与检索</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

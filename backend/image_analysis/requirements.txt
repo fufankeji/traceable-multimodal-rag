@@ -1,0 +1,17 @@
+# 简化版VLM图像分析器依赖包
+
+# 图像处理
+Pillow>=10.0.0
+
+# HTTP异步请求
+aiohttp>=3.9.0
+
+# HTTP同步请求
+requests>=2.31.0
+
+# OpenAI SDK (用于GPT系列模型)
+openai>=1.0.0
+
+# 可选：如果需要处理PDF转图片
+# pdf2image>=1.16.0
+# poppler-utils  # Linux系统需要: sudo apt-get install poppler-utils

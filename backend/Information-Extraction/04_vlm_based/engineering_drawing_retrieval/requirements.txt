@@ -1,0 +1,54 @@
+# ===== 核心依赖 =====
+langchain>=0.1.0
+langchain-core>=0.1.0
+langchain-openai>=0.0.5
+langchain-community>=0.0.20
+
+# ===== VLM API =====
+openai>=1.10.0
+anthropic>=0.18.0  # 如果使用Claude
+
+# ===== 向量数据库 =====
+# Milvus (推荐，性能最好)
+pymilvus>=2.3.0
+
+# Qdrant (备选)
+# qdrant-client>=1.7.0
+
+# Chroma (简单场景)
+# chromadb>=0.4.0
+
+# ===== Embedding =====
+# OpenAI embedding已包含在langchain-openai中
+# 本地CLIP (可选)
+# transformers>=4.30.0
+# torch>=2.0.0
+
+# ===== 图像处理 =====
+Pillow>=10.0.0
+opencv-python>=4.8.0
+numpy>=1.24.0
+
+# ===== OCR (可选但推荐) =====
+paddleocr>=2.7.0
+paddlepaddle>=2.5.0  # CPU版本
+# paddlepaddle-gpu>=2.5.0  # GPU版本（如有GPU）
+
+# ===== PDF处理 =====
+PyMuPDF>=1.23.0
+
+# ===== 异步HTTP =====
+aiohttp>=3.9.0
+
+# ===== 缓存 (可选) =====
+# redis>=5.0.0
+
+# ===== 工具库 =====
+python-dotenv>=1.0.0
+pydantic>=2.0.0
+tqdm>=4.66.0
+
+# ===== 开发工具 =====
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
+black>=23.0.0

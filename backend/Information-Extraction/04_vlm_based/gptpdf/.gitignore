@@ -1,0 +1,8 @@
+test/.env
+gp/*
+*.pyc
+dist/*
+.idea
+venv
+test_output
+.vscode/settings.json

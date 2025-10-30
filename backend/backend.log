@@ -1,0 +1,48 @@
+/root/anaconda3/envs/multimodal_rag/lib/python3.11/site-packages/pydantic/_internal/_fields.py:151: UserWarning: Field "model_name" has conflict with protected namespace "model_".
+
+You may be able to resolve this warning by setting `model_config['protected_namespaces'] = ()`.
+  warnings.warn(
+/root/anaconda3/envs/multimodal_rag/lib/python3.11/site-packages/pydantic/_internal/_fields.py:151: UserWarning: Field "model_url" has conflict with protected namespace "model_".
+
+You may be able to resolve this warning by setting `model_config['protected_namespaces'] = ()`.
+  warnings.warn(
+初始化 Embedding 模型...
+  使用通义千问 text-embedding-v4
+✓ 初始化通义千问 Embedding
+  模型: text-embedding-v4
+  维度: 1024
+Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+✓ 向量数据库初始化完成
+  Embedding类型: qwen
+  分块大小: 800, 重叠: 100
+✓ 初始化VLM分析器: openai_sdk - gpt-4o
+✓ 服务初始化完成
+============================================================
+
+
+============================================================
+🚀 启动多模态 RAG 服务
+============================================================
+
+Started server process [1393224]
+Waiting for application startup.
+Application startup complete.
+Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+
+================================================================================
+[9c27ff93] 📥 收到请求
+[9c27ff93]   方法: GET
+[9c27ff93]   路径: /health
+[9c27ff93]   客户端: 127.0.0.1
+[9c27ff93]   User-Agent: curl/7.81.0
+================================================================================
+
+================================================================================
+[9c27ff93] 📤 返回响应
+[9c27ff93]   状态码: 200
+[9c27ff93]   耗时: 0.001秒
+================================================================================
+
+127.0.0.1:51974 - "GET /health HTTP/1.1" 200 OK

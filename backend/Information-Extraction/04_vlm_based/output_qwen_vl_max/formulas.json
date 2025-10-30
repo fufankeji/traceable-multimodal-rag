@@ -1,0 +1,44 @@
+[
+  {
+    "page": 11,
+    "id": "公式1",
+    "latex": "a == b",
+    "type": "inline",
+    "context": "if (a == b) {"
+  },
+  {
+    "page": 11,
+    "id": "公式2",
+    "latex": "x.equals(y)",
+    "type": "inline",
+    "context": "if (x.equals(y)) {"
+  },
+  {
+    "page": 11,
+    "id": "公式3",
+    "latex": "Math.abs(a - b) < diff",
+    "type": "inline",
+    "context": "if (Math.abs(a - b) < diff) {"
+  },
+  {
+    "page": 11,
+    "id": "公式4",
+    "latex": "a.subtract(b)",
+    "type": "inline",
+    "context": "BigDecimal x = a.subtract(b);"
+  },
+  {
+    "page": 11,
+    "id": "公式5",
+    "latex": "b.subtract(c)",
+    "type": "inline",
+    "context": "BigDecimal y = b.subtract(c);"
+  },
+  {
+    "page": 11,
+    "id": "公式6",
+    "latex": "x.equals(y)",
+    "type": "inline",
+    "context": "if (x.equals(y)) {"
+  }
+]

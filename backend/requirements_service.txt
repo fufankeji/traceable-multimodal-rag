@@ -1,0 +1,33 @@
+# 多模态 RAG 服务依赖
+
+# Web 框架
+fastapi==0.109.0
+uvicorn[standard]==0.27.0
+python-multipart==0.0.9
+
+# LangChain 核心
+langchain==0.1.6
+langchain-community==0.0.20
+langchain-openai==0.0.5
+
+# 向量数据库
+chromadb==0.4.22
+sentence-transformers==2.3.1
+
+# PDF 处理
+pymupdf>=1.24.2
+pymupdf4llm==0.0.5
+pdf2image==1.17.0
+Pillow==10.2.0
+
+# HTTP 客户端
+aiohttp==3.9.3
+requests==2.31.0
+
+# OpenAI SDK
+openai==1.12.0
+
+# 工具库
+python-dotenv==1.0.1
+pydantic==2.6.0
+pydantic-settings==2.1.0
