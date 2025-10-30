@@ -21,6 +21,10 @@ The project deeply integrates Vision Language Model (VLM) technology to achieve 
 
 
 
+https://github.com/user-attachments/assets/625ce3fb-ec22-4890-b921-1ed76ef3d46d
+
+
+
 ## 🎯 Core Features
 
 
